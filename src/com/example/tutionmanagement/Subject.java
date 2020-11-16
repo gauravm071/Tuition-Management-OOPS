@@ -3,7 +3,6 @@ package com.example.tutionmanagement;
 public class Subject {
     int hoursRequiredForOneClass;
     int classesRequiredForSubjectPerWeek;
-
     @Override
     public String toString() {
         return "Subject{" +
