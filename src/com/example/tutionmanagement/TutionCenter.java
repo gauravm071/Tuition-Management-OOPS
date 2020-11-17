@@ -19,21 +19,20 @@ public class TutionCenter {
         ArrayList<Student> myStudents = listOfStudents;
         String student = myStudents.toString();
         System.out.println(student);
-    }       //Done
+    }
 
     public void getAllTeachersofthetuition(ArrayList<Teacher> teacher) {
        String myTeacher= teacher.toString();
         System.out.println(myTeacher);
-    }   //Done
+    }
 
     public void getAllStudentsOfABatch(Batch batch) {
-//        System.out.println("entered");
         System.out.println(batch.toString());
-    } // Done
+    }
 
     public void calculateEarnedFeefromstudentsforonebatch(Fees fees) {
         System.out.println("Fees per student: "+fees.getPerStudent());
-    } // Done
+    }
 
     public void calculateTotalEarnedFee(Fees fees) {
         int numberOfbatches= listOfBatches.size();
@@ -45,11 +44,11 @@ public class TutionCenter {
         int totalEarnedFee= numberOfStudents* fees.getPerStudent();
         System.out.println("total Earned fees is : "+ totalEarnedFee);
 
-    }   //Done
+    }
 
     public void paidFeeToTeacherforonebatch(Fees fees) {
         System.out.println("fees paid to the teacher: "+ fees.getPerTeacher());
-    }  //Done
+    }
 
     public void calculateTotalPaidFee(int totalNumberOfTeachers, Fees fees) {
         int totalPaidFee= totalNumberOfTeachers * fees.getPerTeacher();

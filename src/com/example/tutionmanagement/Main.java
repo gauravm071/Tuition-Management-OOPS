@@ -78,18 +78,17 @@ public class Main {
         setTeacherData();
         setFees();
 
-        // functions calling
-//        tutionCenter.getAllStudentsofthetuition(listOfStudents);
-//        tutionCenter.getAllTeachersofthetuition(listOfTeachers);
-//        tutionCenter.getAllStudentsOfABatch(batch);
+        tutionCenter.getAllStudentsofthetuition(listOfStudents);
+        tutionCenter.getAllTeachersofthetuition(listOfTeachers);
+        tutionCenter.getAllStudentsOfABatch(batch);
         ArrayList<Batch> listOfBatches= new ArrayList<>();
         listOfBatches.add(batch);
-//        tutionCenter.setListOfBatches(listOfBatches);
-//        tutionCenter.calculateTotalEarnedFee(fees);
-//        tutionCenter.calculateTotalPaidFee(listOfTeachers.size(),fees);
+        tutionCenter.setListOfBatches(listOfBatches);
+        tutionCenter.calculateTotalEarnedFee(fees);
+        tutionCenter.calculateTotalPaidFee(listOfTeachers.size(),fees);
 
-//        tutionCenter.calculateEarnedFeefromstudentsforonebatch(fees);
-//        tutionCenter.paidFeeToTeacherforonebatch(fees);
-//        tutionCenter.getMaxStudentBatch();
+        tutionCenter.calculateEarnedFeefromstudentsforonebatch(fees);
+        tutionCenter.paidFeeToTeacherforonebatch(fees);
+        tutionCenter.getMaxStudentBatch();
     }
 }
